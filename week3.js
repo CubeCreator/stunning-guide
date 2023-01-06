@@ -51,22 +51,22 @@ console.log(names[0])
     }
     console.log(totalLength)
 //7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
-var words = 'Hello'
-var n = 3
+//var words = 'Hello'
+//var n = 3
     function repeatWords (words, n) {
         console.log(words.repeat(n))
         return words.repeat(n)
     }
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
     //•	The full name should be the first and the last name separated by a space.
-var firstName = "Simon"
-var lastName = "Lucas"
+//var firstName = "Simon"
+//var lastName = "Lucas"
     function fullNaming (firstName, lastName) {
         console.log(firstName + " " + lastName)
         return firstName + " " + lastName
     }
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
-var array1 = [24, 8, 17, 44, 12, 1]   
+//var array1 = [24, 8, 17, 44, 12, 1]   
     function numberSum (array1) {
         let numberAmount = 0
         for (i = 0; i < array1.length - 1; i++) {
@@ -83,7 +83,7 @@ var array1 = [24, 8, 17, 44, 12, 1]
         }
     }
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
-var array2 = [49, 30, 11, 56, 22, 98, 5, 74]   
+//var array2 = [49, 30, 11, 56, 22, 98, 5, 74]   
     function arrayAverage (array2) {
         let numberAmount = 0
         for (i = 0; i < array2.length - 1; i++){
@@ -91,8 +91,11 @@ var array2 = [49, 30, 11, 56, 22, 98, 5, 74]
         }
         numberAmount = numberAmount / array2.length - 1
         console.log(numberAmount)
+        return(numberAmount)
     }
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+    //let array3 = [40, 27, 9, 77, 51, 31, 98, 66]
+    //let array4 = [20, 38, 2, 100, 56, 49, 12, 89]
     function twoArrayCompare (array3, array4) {
         let firstArrayCounter = 0
         let secondArrayCounter = 0
@@ -102,8 +105,8 @@ var array2 = [49, 30, 11, 56, 22, 98, 5, 74]
         for (i = 0; i < array4.length; i++) {
             secondArrayCounter += array4[i]
         }
-        console.log(firstArrayCounter)
-        console.log(secondArrayCounter)
+        console.log(firstArrayCounter/ array3.length - 1)
+        console.log(secondArrayCounter/ array4.length - 1)
         if (firstArrayCounter / array3.length - 1 > secondArrayCounter / array4.length - 1)
             console.log(true)
             return true
@@ -112,14 +115,16 @@ var array2 = [49, 30, 11, 56, 22, 98, 5, 74]
         
     }
 //12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+    //isHotOutside = true
+    //moneyInPocket = 9.50
     function willBuyDrink (isHotOutside, moneyInPocket) {
         if (isHotOutside = true && moneyInPocket > 10.50){
             console.log(true)
-            return true
+            //return true
         }
         else {
             console.log(false)
-            return false
+            //return false
         }
 
     }
@@ -131,7 +136,7 @@ var array2 = [49, 30, 11, 56, 22, 98, 5, 74]
         //declaring the new array and setting it to empty
         let array5 = []
         //loop to subtract the array elements NOTE: This may not work that well if the arrays are different lengths
-        for (i = 0; i < array3.length - 1 && i < array4.length - 1; i++) {
+        for (i = 0; i < array3.length && i < array4.length; i++) {
             array5[i] = array3[i] - array4[i]
         }
         console.log(array5)
