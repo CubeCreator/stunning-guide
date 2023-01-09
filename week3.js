@@ -57,6 +57,8 @@ console.log(names[0])
         console.log(words.repeat(n))
         return words.repeat(n)
     }
+    //repeatWords('Hello', 3)
+    //repeatWords('Morning', 7)
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
     //•	The full name should be the first and the last name separated by a space.
 //var firstName = "Simon"
@@ -65,6 +67,8 @@ console.log(names[0])
         console.log(firstName + " " + lastName)
         return firstName + " " + lastName
     }
+    //fullNaming("Simon", "Lucas")
+    //fullNaming("Kristina", "Macias")
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 //var array1 = [24, 8, 17, 44, 12, 1]   
     function numberSum (array1) {
@@ -82,17 +86,18 @@ console.log(names[0])
             return false
         }
     }
+    //numberSum(24, 8, 17, 44, 12, 1)
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
 //var array2 = [49, 30, 11, 56, 22, 98, 5, 74]   
     function arrayAverage (array2) {
         let numberAmount = 0
-        for (i = 0; i < array2.length - 1; i++){
+        for (i = 0; i < array2.length; i++){
             numberAmount += array2[i]
         }
-        numberAmount = numberAmount / array2.length - 1
-        console.log(numberAmount)
+        numberAmount = numberAmount / array2.length
         return(numberAmount)
     }
+    arrayAverage([49, 30, 11, 56, 22, 98, 5, 74])
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
     //let array3 = [40, 27, 9, 77, 51, 31, 98, 66]
     //let array4 = [20, 38, 2, 100, 56, 49, 12, 89]
@@ -107,13 +112,15 @@ console.log(names[0])
         }
         console.log(firstArrayCounter/ array3.length - 1)
         console.log(secondArrayCounter/ array4.length - 1)
-        if (firstArrayCounter / array3.length - 1 > secondArrayCounter / array4.length - 1)
+        if (firstArrayCounter / array3.length - 1 > secondArrayCounter / array4.length - 1) {
             console.log(true)
             return true
+            }   
         console.log(false)
         return false
-        
     }
+    //twoArrayCompare([20, 27, 9, 77, 51, 31, 98, 66], [20, 38, 2, 100, 56, 49, 12, 89])
+    //twoArrayCompare([59, 64, 27, 2, 44, 19, 71, 99], [1, 50, 21, 84, 36, 49, 14, 97])
 //12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
     //isHotOutside = true
     //moneyInPocket = 9.50
@@ -128,6 +135,8 @@ console.log(names[0])
         }
 
     }
+    //willBuyDrink(true, 12)
+    //willBuyDrink(true, 10.50)
 //13.	Create a function of your own that solves a problem. 
     //•	In comments, write what the function does and why you created it.
     
@@ -142,3 +151,4 @@ console.log(names[0])
         console.log(array5)
         return array5
     }
+    //subtractionMethod([20, 27, 9, 77, 51, 31, 98, 66], [20, 38, 2, 100, 56, 49, 12, 89])
